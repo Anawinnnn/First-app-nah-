@@ -6,8 +6,8 @@ f_dis = price * (dis / 100)
 f_price = price - f_dis
 vat = f_price * 0.07
 net = f_price + vat
-fr.header(f"• ส่วนลด ({dis:.0f}%): **{f_dis:.2f}** บาท")
-fr.header(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
+fr.write(f"• ส่วนลด ({dis:.0f}%): **{f_dis:.2f}** บาท")
+fr.write(f"• ภาษีมูลค่าเพิ่ม (VAT 7%): **{vat:.2f}** บาท")
 fr.title(f"• ราคาสุทธิ: {net:.2f} บาท")
 fr.divider()
 fr.write("นายอนาวิล คำมะนิจ เลขที่ 31 ม.4/5")
